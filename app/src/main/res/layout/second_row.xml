@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:padding="16dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image1"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@drawable/image1">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/vSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey i'm the sender"
+        android:layout_toRightOf="@+id/image1"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:lines="1"
+        android:layout_toLeftOf="@+id/vtime"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/vSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSender"
+        android:layout_alignLeft="@+id/vSender"
+        android:lines="1"
+        android:layout_toRightOf="@+id/image1"
+        android:text="Hey i'm the subject"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/vContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSubject"
+        android:layout_alignLeft="@+id/vSender"
+        android:layout_toRightOf="@+id/image1"
+        android:text="Hey i'm the content hello"
+        android:lines="1"/>
+    <TextView
+        android:text="10:30AM"
+        android:id="@+id/vtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_200"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/vSender">
+
+    </TextView>
+</RelativeLayout>
